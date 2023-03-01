@@ -18,10 +18,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/game/")
+@RequestMapping("/account/")
 public class GameController {
 
-    @PostMapping("/account/verify")
+    @PostMapping("/verify")
     public Map<String, Object> accountVerify(@RequestBody @Valid AccountEntity entity){
         AccountBody body = new AccountBody();
         body.setId(genId());
